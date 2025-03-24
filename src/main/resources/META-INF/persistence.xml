@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<persistence xmlns="https://jakarta.ee/xml/ns/persistence" version="3.1"> 
+<persistence-unit name="EmployeePU"> 
+<properties> 
+	<property name="jakarta.persistence.jdbc.driver" value="com.mysql.cj.jdbc.Driver"/> <!-- Drivername -->
+	<property name="jakarta.persistence.jdbc.url" value="jdbc:mysql://localhost:3306/todo"/> <!-- predefined and which db need to connect-->
+	<property name="jakarta.persistence.jdbc.user" value="root"/>   <!-- Predefined data-->
+	<property name="jakarta.persistence.jdbc.password" value="Muni@2003"/> <!-- Change pass -->
+	<property name="hibernate.dialect" value="org.hibernate.dialect.MySQL8Dialect"/> <!-- grammer. It means it can change the data according to sql property-->
+	<property name="hibernate.hbm2ddl.auto" value="update"/> <!-- This updates your database schema automatically when entities change. -->
+	<property name="hibernate.show_sql" value="true"/> 
+</properties> 
+</persistence-unit> 
+</persistence>
